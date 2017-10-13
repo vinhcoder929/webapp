@@ -1,5 +1,17 @@
 // bower:scss
 // endbower
+@import "modules/variables";
+@import "modules/utility";
+@import "partials/menu";
+@import "partials/typography";
+@import "vendor/fontawesome/font-awesome.scss";
+
+
+
+
+// menu item:
+
+
 
 .browserupgrade {
   margin: 0.2em 0;
@@ -8,24 +20,10 @@
   padding: 0.2em 0;
 }
 
+/* Space out content a bit */
 body {
-  background: #fafafa;
-  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  color: #333;
+  padding-top: 0;
+  padding-bottom: 0;
 }
 
-.hero-unit {
-  margin: 50px auto 0 auto;
-  width: 300px;
-  font-size: 18px;
-  font-weight: 200;
-  line-height: 30px;
-  background-color: #eee;
-  border-radius: 6px;
-  padding: 60px;
-  h1 {
-    font-size: 60px;
-    line-height: 1;
-    letter-spacing: -1px;
-  }
-}
+/* Everything but the jumbotron gets side spacing for mobile first views */

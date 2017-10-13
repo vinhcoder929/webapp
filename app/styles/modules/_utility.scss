@@ -1,0 +1,6 @@
+$menu-item: 6;
+$menu-item-width: (100 / $menu-item) * 1%;
+
+@function em($pixels, $context: $browser-context) {
+  @return #{$pixels/$context}em;
+}
