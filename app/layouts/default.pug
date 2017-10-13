@@ -1,0 +1,51 @@
+doctype html
+html.no-js(lang="")
+  head
+    meta(charset="utf-8")
+
+    meta(name="description", content="")
+    meta(name="viewport", content="width=device-width, initial-scale=1")
+    title 001
+    link(rel="apple-touch-icon", href="apple-touch-icon.png")
+    link(rel="stylesheet", href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css", integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ", crossorigin="anonymous")
+    script(src="https://code.jquery.com/jquery-3.1.1.slim.min.js", integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n", crossorigin="anonymous")
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js", integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb", crossorigin="anonymous")
+    script(src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js", integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn", crossorigin="anonymous")
+    // Place favicon.ico in the root directory
+    // build:css styles/vendor.css
+    // bower:css
+    // endbower
+    // endbuild
+    // build:css styles/main.css
+    link(rel="stylesheet", href="styles/main.css")
+    // endbuild
+    // build:js scripts/vendor/modernizr.js
+    script(src="/bower_components/modernizr/modernizr.js")
+    // endbuild
+
+  body
+    //if IE
+      p.browserupgrade
+        | You are using an
+        strong outdated
+        |  browser. Please
+        a(href="http://browsehappy.com/") upgrade your browser
+        |  to improve your experience.
+    block content
+
+    // Google Analytics: change UA-XXXXX-X to be your site's ID.
+    script.
+      (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+      function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+      e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+      e.src='https://www.google-analytics.com/analytics.js';
+      r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+      ga('create','UA-XXXXX-X');ga('send','pageview');
+    // build:js scripts/vendor.js
+    // bower:js
+    script(src="/bower_components/modernizr/modernizr.js")
+    // endbower
+    // endbuild
+    // build:js scripts/main.js
+    script(src="scripts/main.js")
+    // endbuild
