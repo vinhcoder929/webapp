@@ -15,8 +15,8 @@ gulp serve:dist
 
 chương trình webapp của Yeoman, tích hợp gulp cùng cấu trúc folder cho Sass
 Document:
-https://github.com/yeoman/generator-webapp
-// cách thêm pug vào Yeoman Webapp Generator
-https://github.com/yeoman/generator-webapp/blob/master/docs/recipes/pug.md
+* https://github.com/yeoman/generator-webapp
+* cách thêm pug vào Yeoman Webapp Generator
+  https://github.com/yeoman/generator-webapp/blob/master/docs/recipes/pug.md
     
 
