@@ -1,3 +1,8 @@
+# Phần mềm cần thiết:
+1. nodejs, có thể cài thêm yarn
+2. git scm
+
+
 # Webapp
 cách cài đặt:
 1. chạy npm install hoặc yarn install nếu bạn sử dụng yarn
