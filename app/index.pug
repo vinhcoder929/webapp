@@ -1,18 +1,38 @@
 extends layouts/default
 
 block content
-  nav.navbar.navbar-toggleable-md.navbar-light.bg-faded
-    button.navbar-toggler.navbar-toggler-right(type="button", data-toggle="collapse", data-target="#navbarSupportedContent", aria-controls="navbarSupportedContent", aria-expanded="false", aria-label="Toggle navigation")
-      span.navbar-toggler-icon
-    a.navbar-brand(href="#") Navbar
-    #navbarSupportedContent.collapse.navbar-collapse
-      ul.navbar-nav.mr-auto
-        li.nav-item.active
-          a.nav-link(href="#") Home
-        li.nav-item
-          a.nav-link(href="#") Link
-        li.nav-item
-          a.nav-link.disabled(href="#") Disabled
-      form.form-inline.my-2.my-lg-0
-        input.form-control.mr-sm-2(type="text", placeholder="Search")
-        button.btn.btn-outline-success.my-2.my-sm-0(type="submit") Search
+  .container-fluid
+    .header
+      nav.navbar.navbar-toggleable-md.navbar-light
+        button.navbar-toggler.navbar-toggler-right(type="button", data-toggle="collapse", data-target="#navbarSupportedContent", aria-controls="navbarSupportedContent", aria-expanded="false", aria-label="Toggle navigation")
+          span.navbar-toggler-icon
+        a.navbar-brand(href="#")
+          img(src="./images/logo/logo-white.png", alt="logo" class="logo__lg")
+          img(src="./images/logo/logo.png", alt="logo" class="logo__mobile")
+        #navbarSupportedContent.collapse.navbar-collapse
+          ul.navbar-nav.mr-auto
+            li.nav-item.active
+              a.nav-link(href="#") home
+            li.nav-item
+              a.nav-link(href="#") about
+            li.nav-item
+              a.nav-link(href="#") igredients
+            li.nav-item
+              a.nav-link(href="#") menu
+            li.nav-item
+              a.nav-link(href="#") reviews
+            li.nav-item
+              a.nav-link(href="#") reservations
+
+      figure.header__fig
+        img(src="./images/bg/bg01.jpg", alt="background")
+        figcaption.header__capt the right ingredients </br>  for the right food
+      .header__deco
+        img(src="./images/deco/deco01.png" alt ="decoration")
+      .header__btn
+        a(href="#") book a table
+        a(href="#") see the menu
+
+
+
+

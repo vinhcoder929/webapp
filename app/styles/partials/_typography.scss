@@ -1,0 +1,12 @@
+a.nav-link {
+  font-family: 'Gentium Book Basic', serif;
+  font-weight: bold;
+  font-size: 1.3em;
+  text-transform: capitalize;
+  color: inherit;
+
+  @media (min-width: 1200px) {
+    font-size: 1.6em;
+    color: $default-text-color !important;;
+  }
+}

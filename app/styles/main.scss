@@ -4,14 +4,8 @@
 @import "modules/utility";
 @import "partials/menu";
 @import "partials/typography";
-@import "vendor/fontawesome/font-awesome.scss";
-
-
-
 
 // menu item:
-
-
 
 .browserupgrade {
   margin: 0.2em 0;
@@ -26,4 +20,107 @@ body {
   padding-bottom: 0;
 }
 
+.header {
+  position: relative;
+  // background: $third-text-color;
+}
+
+.header__fig img {
+    max-width: 100%;
+  @media (min-width: 1200px) {
+    position: absolute;
+    top: 0;
+    z-index: -10;
+    width: 100%;
+  }
+}
+
+.header__capt {
+  font-family: 'yeseva one', serif;
+  text-align: center;
+  text-transform: capitalize;
+  color: $default-text-color;
+  padding: 8px 0;
+  background: $third-text-color;
+  border-top: 1px solid $default-text-color;
+
+  @media (min-width: 768px) {
+    font-size: 30px;
+  }
+
+  @media (min-width: 1200px) {
+    font-size: 100px;
+    letter-spacing: 3px;
+    line-height: 1.4;
+    text-transform: none;
+    background-color: initial;
+    width: initial;
+    border-top: 0;
+    border-bottom:0;
+    transform: translateY(40%);
+  }
+}
+
+.header__btn {
+  font-family: 'lato', sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+}
+.header__btn a {
+  display: inline-block;
+  padding: 20px 55px;
+  border: 2px solid rgba($color: $third-text-color, $alpha: 0.4);
+  border-radius: 3px;
+  margin: 10px;
+  text-decoration: none;
+  color: $default-text-color;
+  background: $third-text-color;
+  transition: .3s all;
+
+  &:active {
+    color: $third-text-color;
+    background: $default-text-color;
+    transition: .3s all;
+  }
+
+  @media (min-width: 992px) {
+    margin: 18px;
+  }
+  @media (min-width: 1200px) {
+    background: rgba($color: $default-text-color, $alpha: 0.7);
+    color: $third-text-color;
+    transition: all .3s;
+
+    &:hover {
+      background: rgba($color: $third-text-color, $alpha: 0.7);
+      color: $default-text-color;
+      transition: all .3s;
+    }
+    &:active {
+      background: rgba($color: $third-text-color, $alpha: 0.9);
+    }
+  }
+}
+
+.header__deco {
+  display: none;
+  @media (min-width: 768px) {
+    display: block;
+    text-align: center;
+    transform: scale(0.8);
+  }
+  @media (min-width: 1200px) {
+    filter: invert(100%);
+    transform: scale(1);
+  }
+
+}
+
+
+
+
+
+
 /* Everything but the jumbotron gets side spacing for mobile first views */
+
+

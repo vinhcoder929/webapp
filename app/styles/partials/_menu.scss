@@ -1,0 +1,65 @@
+/*      Menu      */
+
+//logo img
+.navbar-brand img {
+  width: 60px;
+  @media(min-width: 1440px) {
+    width: 180px;
+  }
+}
+
+.logo__lg {
+  display: none;
+  @media (min-width: 1200px) {
+    display: block;
+  }
+}
+
+.logo__mobile {
+  display: block;
+  @media (min-width: 1200px) {
+    display: none;
+  }
+}
+
+.container-fluid {
+  padding: 0;
+  @media(min-width: 1200px){
+    padding: initial;
+  }
+}
+
+//menu width
+.container-fluid .navbar {
+  background: $bg-faded;
+
+  @media (min-width: 768px) {
+    background: initial;
+  }
+
+  @media (min-width: 1440px) {
+    width: 1500px;
+    margin: 0 auto;
+  }
+}
+
+.navbar .navbar-nav {
+  @media (min-width: 992px) {
+//     margin-left: 80px;
+    margin: 0 auto;
+    transform: translate(-50px);
+  }
+  @media (min-width: 1440px) {
+    margin-left: 285px;
+    margin-top: 10px;
+  }
+}
+
+a.nav-link {
+  @media (min-width: 1200px) {
+    margin: 0 24px;
+    transition: .2s;
+    position: relative;
+  }
+}
+
